@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympus Masonry - Bold Gold</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../shared/css/reset.css">
+  <link rel="stylesheet" href="../shared/css/variables.css">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'olympus-gold': '#D4A657',
+            'olympus-gold-light': '#E5C078',
+            'olympus-gold-dark': '#B8903C',
+            'olympus-black': '#000000',
+            'olympus-white': '#FFFFFF',
+          },
+          fontFamily: {
+            'display': ['Bebas Neue', 'sans-serif'],
+            'heading': ['Oswald', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white font-body">
+
+  <!-- Header with Gold Accent Bar -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="h-2 bg-olympus-gold"></div>
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center">
+        <img src="../shared/images/logo.svg" alt="Olympus Masonry" class="h-12">
+      </a>
+      <nav class="hidden md:flex space-x-8 font-heading text-sm uppercase tracking-wider">
+        <a href="#services" class="text-gray-700 hover:text-olympus-gold transition-colors font-semibold">Services</a>
+        <a href="#portfolio" class="text-gray-700 hover:text-olympus-gold transition-colors font-semibold">Portfolio</a>
+        <a href="#contact" class="text-gray-700 hover:text-olympus-gold transition-colors font-semibold">Contact</a>
+      </nav>
+      <a href="tel:4039195272" class="bg-olympus-gold text-olympus-black px-8 py-4 font-heading uppercase text-sm tracking-wider hover:bg-olympus-gold-light transition-all shadow-lg">
+        Get Quote
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero - Black Background with LARGE Gold Text -->
+  <section class="min-h-screen bg-olympus-black text-white flex items-center py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="border-4 border-olympus-gold p-8 md:p-16 inline-block mb-12">
+        <span class="text-olympus-gold font-heading uppercase tracking-widest text-lg font-bold">Edmonton's Best</span>
+      </div>
+
+      <h1 class="text-8xl md:text-9xl font-display text-olympus-gold mb-8 leading-none">
+        MASONRY<br>EXPERTS
+      </h1>
+
+      <p class="text-3xl md:text-4xl font-heading text-white mb-12 max-w-3xl uppercase tracking-wide">
+        BOLD CRAFTSMANSHIP. YEAR-ROUND SERVICE.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-6">
+        <a href="tel:4039195272" class="bg-olympus-gold text-olympus-black px-12 py-6 font-heading uppercase tracking-wider text-xl font-bold hover:bg-olympus-gold-light transition-all shadow-xl">
+          403-919-5272
+        </a>
+        <a href="#services" class="border-4 border-olympus-gold text-olympus-gold px-12 py-6 font-heading uppercase tracking-wider text-xl font-bold hover:bg-olympus-gold hover:text-olympus-black transition-all">
+          Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOLD Section - Trust Signals -->
+  <section class="bg-olympus-gold py-20 px-6">
+    <div class="h-3 bg-olympus-black mb-12"></div>
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-6xl md:text-7xl font-display text-olympus-black text-center mb-16 uppercase">
+        Why Choose Us
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="text-center bg-olympus-black p-8">
+          <div class="text-7xl font-display text-olympus-gold mb-4">15+</div>
+          <p class="text-white font-heading uppercase tracking-wider text-lg font-semibold">Years Experience</p>
+        </div>
+        <div class="text-center bg-olympus-black p-8">
+          <div class="text-7xl font-display text-olympus-gold mb-4">100%</div>
+          <p class="text-white font-heading uppercase tracking-wider text-lg font-semibold">Licensed</p>
+        </div>
+        <div class="text-center bg-olympus-black p-8">
+          <div class="text-5xl font-display text-olympus-gold mb-4">YEAR-ROUND</div>
+          <p class="text-white font-heading uppercase tracking-wider text-lg font-semibold">Service</p>
+        </div>
+        <div class="text-center bg-olympus-black p-8">
+          <div class="text-5xl font-display text-olympus-gold mb-4">EDMONTON</div>
+          <p class="text-white font-heading uppercase tracking-wider text-lg font-semibold">Local</p>
+        </div>
+      </div>
+    </div>
+    <div class="h-3 bg-olympus-black mt-12"></div>
+  </section>
+
+  <!-- White Section - Service 1 -->
+  <section class="bg-white py-24 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="h-2 w-32 bg-olympus-gold mb-8"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-6xl md:text-7xl font-display text-olympus-black mb-6 uppercase">
+            Brick &<br>Stone Work
+          </h2>
+          <p class="text-2xl font-body text-gray-700 mb-8 leading-relaxed">
+            Expert installation and repair of brick and natural stone. Premium craftsmanship for residential and commercial projects.
+          </p>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-center text-xl font-heading text-gray-800 uppercase">
+              <span class="w-3 h-3 bg-olympus-gold mr-4"></span>
+              Residential & Commercial
+            </li>
+            <li class="flex items-center text-xl font-heading text-gray-800 uppercase">
+              <span class="w-3 h-3 bg-olympus-gold mr-4"></span>
+              New Build & Repair
+            </li>
+            <li class="flex items-center text-xl font-heading text-gray-800 uppercase">
+              <span class="w-3 h-3 bg-olympus-gold mr-4"></span>
+              Winter-Ready
+            </li>
+          </ul>
+          <a href="#" class="inline-block bg-olympus-black text-olympus-gold px-10 py-5 font-heading uppercase tracking-wider text-lg font-bold hover:bg-olympus-gold hover:text-olympus-black transition-all border-4 border-olympus-black">
+            Learn More
+          </a>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=900&fit=crop&q=80" alt="Brick Work" class="w-full h-[500px] object-cover shadow-2xl border-8 border-olympus-gold">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLACK Section - Service 2 -->
+  <section class="bg-olympus-black py-24 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="h-2 w-32 bg-olympus-gold mb-8"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=900&fit=crop&q=80" alt="Retaining Wall" class="w-full h-[500px] object-cover shadow-2xl border-8 border-olympus-gold">
+        </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="text-6xl md:text-7xl font-display text-white mb-6 uppercase">
+            Retaining<br>Walls
+          </h2>
+          <p class="text-2xl font-body text-gray-300 mb-8 leading-relaxed">
+            Transform your outdoor spaces with structural beauty and functionality. Built to withstand Edmonton's harsh climate.
+          </p>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-center text-xl font-heading text-gray-300 uppercase">
+              <span class="w-3 h-3 bg-olympus-gold mr-4"></span>
+              Custom Designs
+            </li>
+            <li class="flex items-center text-xl font-heading text-gray-300 uppercase">
+              <span class="w-3 h-3 bg-olympus-gold mr-4"></span>
+              Drainage Solutions
+            </li>
+            <li class="flex items-center text-xl font-heading text-gray-300 uppercase">
+              <span class="w-3 h-3 bg-olympus-gold mr-4"></span>
+              Multi-Season
+            </li>
+          </ul>
+          <a href="#" class="inline-block bg-olympus-gold text-olympus-black px-10 py-5 font-heading uppercase tracking-wider text-lg font-bold hover:bg-white hover:text-olympus-black transition-all border-4 border-olympus-gold">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOLD Section - Service 3 -->
+  <section class="bg-olympus-gold py-24 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="h-2 w-32 bg-olympus-black mb-8"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-6xl md:text-7xl font-display text-olympus-black mb-6 uppercase">
+            Chimneys &<br>Fireplaces
+          </h2>
+          <p class="text-2xl font-body text-gray-900 mb-8 leading-relaxed">
+            Professional chimney repair, restoration, and fireplace installations. Safety and beauty combined.
+          </p>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-center text-xl font-heading text-gray-900 uppercase">
+              <span class="w-3 h-3 bg-olympus-black mr-4"></span>
+              Repair & Rebuild
+            </li>
+            <li class="flex items-center text-xl font-heading text-gray-900 uppercase">
+              <span class="w-3 h-3 bg-olympus-black mr-4"></span>
+              Indoor & Outdoor
+            </li>
+            <li class="flex items-center text-xl font-heading text-gray-900 uppercase">
+              <span class="w-3 h-3 bg-olympus-black mr-4"></span>
+              Safety First
+            </li>
+          </ul>
+          <a href="#" class="inline-block bg-olympus-black text-olympus-gold px-10 py-5 font-heading uppercase tracking-wider text-lg font-bold hover:bg-white hover:text-olympus-black transition-all border-4 border-olympus-black">
+            Learn More
+          </a>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&h=900&fit=crop&q=80" alt="Fireplace" class="w-full h-[500px] object-cover shadow-2xl border-8 border-olympus-black">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHITE Section - Winter Specialty -->
+  <section class="bg-white py-24 px-6">
+    <div class="container mx-auto max-w-5xl text-center">
+      <div class="h-2 w-32 bg-olympus-gold mx-auto mb-12"></div>
+
+      <h2 class="text-7xl md:text-8xl font-display text-olympus-black mb-8 uppercase">
+        Winter<br>Specialists
+      </h2>
+
+      <p class="text-3xl font-heading text-gray-700 mb-12 uppercase tracking-wide">
+        Don't let cold weather stop your project
+      </p>
+
+      <div class="bg-olympus-black p-12 border-8 border-olympus-gold mb-12">
+        <p class="text-2xl font-body text-white leading-relaxed">
+          We specialize in cold-weather masonry using certified techniques and materials. Available 365 days a year for your convenience.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-8 border-l-4 border-olympus-gold">
+          <h3 class="text-2xl font-heading uppercase text-olympus-gold mb-3">Cold-Weather</h3>
+          <p class="text-gray-700 font-body">Certified techniques</p>
+        </div>
+        <div class="bg-gray-100 p-8 border-l-4 border-olympus-gold">
+          <h3 class="text-2xl font-heading uppercase text-olympus-gold mb-3">Year-Round</h3>
+          <p class="text-gray-700 font-body">365 days available</p>
+        </div>
+        <div class="bg-gray-100 p-8 border-l-4 border-olympus-gold">
+          <h3 class="text-2xl font-heading uppercase text-olympus-gold mb-3">Emergency</h3>
+          <p class="text-gray-700 font-body">Rapid response</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLACK Section - Testimonial -->
+  <section class="bg-olympus-black py-24 px-6">
+    <div class="container mx-auto max-w-4xl text-center">
+      <div class="h-2 w-32 bg-olympus-gold mx-auto mb-12"></div>
+
+      <blockquote class="text-4xl md:text-5xl font-heading text-white mb-10 leading-relaxed uppercase">
+        "Outstanding work, professional service"
+      </blockquote>
+
+      <div class="flex items-center justify-center space-x-2 mb-8">
+        <svg class="w-8 h-8 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-8 h-8 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-8 h-8 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-8 h-8 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-8 h-8 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      </div>
+
+      <div class="border-t-2 border-olympus-gold pt-6 inline-block">
+        <p class="font-heading text-2xl text-olympus-gold uppercase tracking-wider font-bold">David Martinez</p>
+        <p class="text-gray-400 font-body">Edmonton, AB</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOLD Section - Final CTA -->
+  <section class="bg-olympus-gold py-32 px-6">
+    <div class="h-3 bg-olympus-black mb-16"></div>
+    <div class="container mx-auto max-w-5xl text-center">
+      <h2 class="text-7xl md:text-9xl font-display text-olympus-black mb-8 uppercase leading-none">
+        READY TO<br>START?
+      </h2>
+
+      <p class="text-3xl font-heading text-gray-900 mb-12 uppercase tracking-wide">
+        Get your free estimate today
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+        <a href="tel:4039195272" class="bg-olympus-black text-olympus-gold px-14 py-7 font-heading uppercase tracking-wider text-2xl font-bold hover:bg-white hover:text-olympus-black transition-all shadow-2xl border-4 border-olympus-black">
+          403-919-5272
+        </a>
+        <a href="mailto:ollympus1@outlook.com" class="border-4 border-olympus-black text-olympus-black px-14 py-7 font-heading uppercase tracking-wider text-2xl font-bold hover:bg-olympus-black hover:text-olympus-gold transition-all shadow-2xl">
+          Email Us
+        </a>
+      </div>
+
+      <p class="text-xl font-body text-gray-800">
+        Office: 403-919-5272 | Cell: 403-919-5272
+      </p>
+    </div>
+    <div class="h-3 bg-olympus-black mt-16"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-olympus-black text-white py-12 px-6 border-t-4 border-olympus-gold">
+    <div class="container mx-auto text-center">
+      <img src="../shared/images/logo.svg" alt="Olympus Masonry" class="h-14 mx-auto mb-6 brightness-0 invert">
+      <p class="text-gray-400 text-sm mb-2 font-heading uppercase tracking-wider">Edmonton's Premier Masonry Experts</p>
+      <p class="text-gray-500 text-xs">© 2025 Olympus Masonry. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

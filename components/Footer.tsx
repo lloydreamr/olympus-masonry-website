@@ -1,0 +1,19 @@
+export default function Footer() {
+  return (
+    <footer className="bg-olympus-black text-white py-8 px-6">
+      <div className="container mx-auto text-center">
+        <div className="text-2xl font-display text-olympus-gold mb-4">OLYMPUS</div>
+        <p className="text-gray-400 text-sm mb-2">© 2025 Olympus Masonry. Edmonton, AB.</p>
+        <p className="text-gray-500 text-xs">
+          <a href="mailto:ollympus1@outlook.com" className="hover:text-olympus-gold transition-colors">
+            ollympus1@outlook.com
+          </a>
+          {" | "}
+          <a href="tel:4039195272" className="hover:text-olympus-gold transition-colors">
+            403-919-5272
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
+}

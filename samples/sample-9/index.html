@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympus Masonry - Video Hero</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../shared/css/reset.css">
+  <link rel="stylesheet" href="../shared/css/variables.css">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'olympus-gold': '#D4A657',
+            'olympus-gold-light': '#E5C078',
+            'olympus-gold-dark': '#B8903C',
+            'olympus-black': '#000000',
+            'olympus-white': '#FFFFFF',
+          },
+          fontFamily: {
+            'display': ['Bebas Neue', 'sans-serif'],
+            'heading': ['Oswald', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Video background styles */
+    .video-hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .video-background {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 0;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%);
+      z-index: 1;
+    }
+
+    .video-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Animated background for browsers that don't support video */
+    @keyframes pan {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .fallback-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1a1a1a 0%, #000000 50%, #1a1a1a 100%);
+      background-size: 200% 200%;
+      animation: pan 15s ease infinite;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="bg-white font-body">
+
+  <!-- Transparent Header (becomes solid on scroll) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-colors duration-300" id="header">
+    <div class="container mx-auto px-6 py-6 flex justify-between items-center">
+      <a href="#" class="flex items-center">
+        <img src="../shared/images/logo.svg" alt="Olympus Masonry" class="h-12 brightness-0 invert">
+      </a>
+      <nav class="hidden md:flex space-x-8 font-heading text-sm uppercase tracking-wider">
+        <a href="#services" class="text-white hover:text-olympus-gold transition-colors">Services</a>
+        <a href="#portfolio" class="text-white hover:text-olympus-gold transition-colors">Portfolio</a>
+        <a href="#contact" class="text-white hover:text-olympus-gold transition-colors">Contact</a>
+      </nav>
+      <a href="tel:4039195272" class="bg-olympus-gold text-olympus-black px-6 py-3 font-heading uppercase text-sm tracking-wider hover:bg-olympus-gold-light transition-colors">
+        403-919-5272
+      </a>
+    </div>
+  </header>
+
+  <!-- Video Hero Section -->
+  <section class="video-hero">
+    <!-- Fallback animated background -->
+    <div class="fallback-background"></div>
+
+    <!-- Video Background (using large image as placeholder since we don't have actual video) -->
+    <img src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c?w=1920&h=1080&fit=crop&q=80" alt="Masonry Work" class="video-background object-cover">
+
+    <!-- Dark Overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Content -->
+    <div class="video-content px-6">
+      <div class="max-w-4xl text-center text-white">
+        <div class="inline-block border-2 border-olympus-gold px-6 py-3 mb-10">
+          <span class="text-olympus-gold font-heading uppercase tracking-widest text-sm">Year-Round Service</span>
+        </div>
+
+        <h1 class="text-7xl md:text-9xl font-display mb-8 leading-none">
+          EDMONTON'S<br>
+          <span class="text-olympus-gold">FINEST</span>
+        </h1>
+
+        <p class="text-2xl md:text-3xl font-body mb-12 leading-relaxed">
+          Expert masonry craftsmanship in brick, stone & concrete
+        </p>
+
+        <a href="tel:4039195272" class="inline-block bg-olympus-gold text-olympus-black px-12 py-6 font-heading uppercase tracking-wider text-lg hover:bg-olympus-gold-light transition-all duration-200 shadow-2xl">
+          Get Free Estimate
+        </a>
+
+        <div class="mt-16">
+          <a href="#services" class="inline-flex items-center text-white hover:text-olympus-gold transition-colors">
+            <span class="font-heading uppercase text-sm tracking-wider mr-2">Scroll to explore</span>
+            <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section - Clean White -->
+  <section id="services" class="py-32 px-6 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-20">
+        <div class="w-20 h-1 bg-olympus-gold mx-auto mb-8"></div>
+        <h2 class="text-6xl font-display text-olympus-black mb-6 uppercase">Our Services</h2>
+        <p class="text-xl text-gray-600 font-body max-w-2xl mx-auto">
+          Comprehensive masonry solutions for residential and commercial projects
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Service 1 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden mb-6">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80" alt="Brick Work" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-olympus-gold/80 transition-colors duration-300"></div>
+          </div>
+          <h3 class="text-2xl font-heading text-olympus-black mb-3 uppercase">Brick & Stone</h3>
+          <p class="text-gray-600 font-body mb-4">Expert installation and repair for all masonry needs.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden mb-6">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&q=80" alt="Retaining Wall" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-olympus-gold/80 transition-colors duration-300"></div>
+          </div>
+          <h3 class="text-2xl font-heading text-olympus-black mb-3 uppercase">Retaining Walls</h3>
+          <p class="text-gray-600 font-body mb-4">Structural beauty for your outdoor spaces.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden mb-6">
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop&q=80" alt="Fireplace" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-olympus-gold/80 transition-colors duration-300"></div>
+          </div>
+          <h3 class="text-2xl font-heading text-olympus-black mb-3 uppercase">Fireplaces</h3>
+          <p class="text-gray-600 font-body mb-4">Indoor and outdoor fireplace installations.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="group">
+          <div class="relative h-64 overflow-hidden mb-6">
+            <img src="https://images.unsplash.com/photo-1604782206219-3b9576575203?w=800&h=600&fit=crop&q=80" alt="Winter Work" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-olympus-gold/80 transition-colors duration-300"></div>
+          </div>
+          <h3 class="text-2xl font-heading text-olympus-black mb-3 uppercase">Winter Work</h3>
+          <p class="text-gray-600 font-body mb-4">Year-round service with certified techniques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Large Image with Stats Overlay -->
+  <section class="relative h-screen">
+    <img src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=1920&h=1080&fit=crop&q=80" alt="Stone Facade" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-olympus-black/70"></div>
+
+    <div class="absolute inset-0 flex items-center justify-center px-6">
+      <div class="max-w-5xl text-white text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+          <div>
+            <div class="text-7xl font-display text-olympus-gold mb-4">15+</div>
+            <p class="text-xl font-heading uppercase tracking-wider">Years Experience</p>
+          </div>
+          <div>
+            <div class="text-7xl font-display text-olympus-gold mb-4">500+</div>
+            <p class="text-xl font-heading uppercase tracking-wider">Projects Complete</p>
+          </div>
+          <div>
+            <div class="text-7xl font-display text-olympus-gold mb-4">100%</div>
+            <p class="text-xl font-heading uppercase tracking-wider">Satisfaction</p>
+          </div>
+        </div>
+
+        <div class="w-32 h-1 bg-olympus-gold mx-auto mb-8"></div>
+
+        <h2 class="text-6xl md:text-7xl font-display mb-6 uppercase">
+          Edmonton's Trusted Experts
+        </h2>
+
+        <p class="text-2xl font-body mb-10 max-w-3xl mx-auto">
+          Licensed, insured, and ready to transform your property with exceptional masonry work
+        </p>
+
+        <a href="tel:4039195272" class="inline-block border-2 border-olympus-gold text-olympus-gold px-12 py-6 font-heading uppercase tracking-wider text-lg hover:bg-olympus-gold hover:text-olympus-black transition-all duration-200">
+          Call: 403-919-5272
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial - Simple White -->
+  <section class="py-32 px-6 bg-white">
+    <div class="container mx-auto max-w-4xl text-center">
+      <div class="w-20 h-1 bg-olympus-gold mx-auto mb-12"></div>
+
+      <blockquote class="text-4xl font-heading text-olympus-black mb-10 leading-relaxed">
+        "Professional, reliable, and the quality of work is outstanding. Highly recommended!"
+      </blockquote>
+
+      <div class="flex items-center justify-center space-x-2 mb-8">
+        <svg class="w-6 h-6 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-6 h-6 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-6 h-6 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-6 h-6 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        <svg class="w-6 h-6 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      </div>
+
+      <div class="border-t border-gray-300 pt-8 inline-block">
+        <p class="font-heading text-xl text-olympus-black uppercase tracking-wider">Jennifer T.</p>
+        <p class="text-gray-600">Edmonton, AB</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section id="contact" class="py-32 px-6 bg-olympus-black text-white">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h2 class="text-7xl md:text-8xl font-display mb-8 uppercase">
+        LET'S BUILD<br>SOMETHING GREAT
+      </h2>
+
+      <p class="text-2xl font-body mb-12">
+        Request your free consultation today
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a href="tel:4039195272" class="bg-olympus-gold text-olympus-black px-12 py-6 font-heading uppercase tracking-wider text-lg hover:bg-olympus-gold-light transition-all duration-200 shadow-2xl">
+          Call: 403-919-5272
+        </a>
+        <a href="mailto:ollympus1@outlook.com" class="border-2 border-white text-white px-12 py-6 font-heading uppercase tracking-wider text-lg hover:bg-white hover:text-olympus-black transition-all duration-200">
+          Email Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-12 px-6 border-t border-gray-800">
+    <div class="container mx-auto text-center">
+      <img src="../shared/images/logo.svg" alt="Olympus Masonry" class="h-14 mx-auto mb-6 brightness-0 invert">
+      <p class="text-gray-400 text-sm mb-2">Edmonton's Premier Masonry Contractors</p>
+      <p class="text-gray-600 text-xs">© 2025 Olympus Masonry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Simple scroll script for header -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('bg-olympus-black', 'shadow-lg');
+        header.classList.remove('bg-transparent');
+      } else {
+        header.classList.add('bg-transparent');
+        header.classList.remove('bg-olympus-black', 'shadow-lg');
+      }
+    });
+  </script>
+
+</body>
+</html>

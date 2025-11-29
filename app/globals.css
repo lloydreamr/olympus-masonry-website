@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Split Screen Layout Styles */
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  min-height: 100vh;
+}
+
+.split-divider {
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    #D4A657 10%,
+    #D4A657 90%,
+    transparent 100%);
+}
+
+.split-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.split-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.split-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .split-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    min-height: auto;
+  }
+
+  .split-divider {
+    display: none;
+  }
+
+  .split-left {
+    padding: 40px 24px;
+    min-height: 60vh;
+  }
+
+  .split-right {
+    min-height: 50vh;
+  }
+}

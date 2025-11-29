@@ -1,0 +1,38 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pyramid with brick pattern -->
+  <g id="pyramid">
+    <!-- Base layer (5 bricks) - Gold -->
+    <rect x="10" y="45" width="8" height="5" fill="#D4A657"/>
+    <rect x="19" y="45" width="8" height="5" fill="#D4A657"/>
+    <rect x="28" y="45" width="8" height="5" fill="#D4A657"/>
+    <rect x="37" y="45" width="8" height="5" fill="#D4A657"/>
+    <rect x="46" y="45" width="8" height="5" fill="#D4A657"/>
+
+    <!-- Layer 2 (4 bricks) - Mix gold/white -->
+    <rect x="14.5" y="39" width="8" height="5" fill="#D4A657"/>
+    <rect x="23.5" y="39" width="8" height="5" fill="#E5E5E5"/>
+    <rect x="32.5" y="39" width="8" height="5" fill="#E5E5E5"/>
+    <rect x="41.5" y="39" width="8" height="5" fill="#FFFFFF"/>
+
+    <!-- Layer 3 (3 bricks) - White -->
+    <rect x="19" y="33" width="8" height="5" fill="#FFFFFF"/>
+    <rect x="28" y="33" width="8" height="5" fill="#FFFFFF"/>
+    <rect x="37" y="33" width="8" height="5" fill="#F5F5F5"/>
+
+    <!-- Layer 4 (2 bricks) - White -->
+    <rect x="23.5" y="27" width="8" height="5" fill="#FFFFFF"/>
+    <rect x="32.5" y="27" width="8" height="5" fill="#FFFFFF"/>
+
+    <!-- Top (1 brick) - White -->
+    <rect x="28" y="21" width="8" height="5" fill="#FFFFFF"/>
+
+    <!-- Sun circle accent -->
+    <circle cx="48" cy="24" r="4" fill="#D4A657" opacity="0.8"/>
+  </g>
+
+  <!-- Text: OLYMPUS -->
+  <text x="66" y="32" font-family="'Bebas Neue', sans-serif" font-size="20" font-weight="400" fill="#D4A657" letter-spacing="1">OLYMPUS</text>
+
+  <!-- Text: MASONRY -->
+  <text x="66" y="48" font-family="'Oswald', sans-serif" font-size="14" font-weight="400" fill="#000000" letter-spacing="2">MASONRY</text>
+</svg>
