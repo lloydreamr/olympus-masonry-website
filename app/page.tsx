@@ -226,7 +226,7 @@ export default function Home() {
             <p className="text-xl md:text-2xl font-body text-gray-800 mb-10 leading-relaxed">
               Serving Edmonton's finest properties with expert masonry craftsmanship
             </p>
-            <div className="grid grid-cols-2 gap-8 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
               <div className="premium-badge border-olympus-black/20">
                 <div className="text-4xl font-display text-white mb-2">100%</div>
                 <div className="text-sm font-heading text-gray-800 uppercase tracking-wide">Licensed & Insured</div>

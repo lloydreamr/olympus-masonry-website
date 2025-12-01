@@ -120,7 +120,8 @@
       "Bash(then echo \"✅ $img\" else echo \"❌ MISSING: $img\" fi done)",
       "Bash(pkill:*)",
       "mcp__playwright__browser_install",
-      "mcp__puppeteer__puppeteer_navigate"
+      "mcp__puppeteer__puppeteer_navigate",
+      "Bash(npm search:*)"
     ],
     "deny": [],
     "ask": []

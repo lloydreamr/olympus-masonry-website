@@ -74,17 +74,26 @@
   animation: fade-in-up 0.6s ease-out forwards;
 }
 
-/* Stagger animations for lists */
-.stagger-children > * {
-  opacity: 0;
-  animation: fade-in-up 0.5s ease-out forwards;
+/* Stagger animations for lists - Desktop only for performance */
+@media (min-width: 1025px) {
+  .stagger-children > * {
+    opacity: 0;
+    animation: fade-in-up 0.5s ease-out forwards;
+  }
+
+  .stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+  .stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+  .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+  .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+  .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
 }
 
-.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
-.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
-.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
-.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
-.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+/* Mobile: No stagger, instant display for snappy feel */
+@media (max-width: 1024px) {
+  .stagger-children > * {
+    opacity: 1;
+  }
+}
 
 /* Premium Badge Styles */
 .premium-badge {
@@ -96,6 +105,15 @@
 .premium-badge:hover {
   border-color: rgba(212, 166, 87, 0.6);
   background: rgba(212, 166, 87, 0.05);
+}
+
+/* Mobile Button Optimizations */
+@media (max-width: 768px) {
+  .premium-button {
+    padding: 1rem 1.5rem !important;
+    font-size: 0.875rem !important;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 1024px) {

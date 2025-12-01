@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -9,8 +10,18 @@ export default function Header() {
   return (
     <header className="bg-olympus-black text-white py-4 px-6 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="flex items-center">
-          <span className="text-2xl font-display text-olympus-gold">OLYMPUS</span>
+        <Link href="/" className="flex flex-row items-center gap-3 md:gap-4">
+          <Image
+            src="/olympus-masonry-logo.png"
+            alt="Olympus Masonry"
+            width={32}
+            height={32}
+            className="w-8 h-8 md:w-10 md:h-10"
+          />
+          <div className="flex items-center gap-2 leading-none">
+            <span className="text-2xl md:text-3xl font-display text-olympus-gold leading-none">OLYMPUS</span>
+            <span className="text-2xl md:text-3xl font-display text-white leading-none">MASONRY</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
