@@ -165,10 +165,10 @@ export default function Portfolio() {
               Call: 403-919-5272
             </a>
             <a
-              href="/contact"
+              href="mailto:ollympus1@outlook.com"
               className="border-2 border-white text-white px-10 py-5 font-heading uppercase tracking-wider text-lg hover:bg-white hover:text-olympus-black transition-all duration-200"
             >
-              Request Quote
+              Email Us
             </a>
           </div>
         </div>

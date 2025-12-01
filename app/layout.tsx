@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Olympus Masonry - Edmonton's Premier Masonry Contractors",
   description: "Expert craftsmanship in brick, stone & concrete. Year-round masonry services in Edmonton, AB. Licensed, insured, and trusted by homeowners and contractors.",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({

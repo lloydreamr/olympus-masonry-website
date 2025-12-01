@@ -4,75 +4,61 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Services - Olympus Masonry",
-  description: "Professional masonry services in Edmonton: brick & stone work, retaining walls, patios, chimneys, fireplaces, and winter masonry.",
+  description: "Professional masonry services in Edmonton: brick & stone work, patios & outdoor spaces, chimneys & fireplaces, and year-round winter masonry.",
 };
 
 const services = [
   {
     title: "Brick & Stone Masonry",
-    description: "Expert installation of brick and natural stone for residential and commercial projects. From patios to building facades, we deliver exceptional craftsmanship.",
+    description: "Transform your property with premium brick and natural stone installations. From elegant residential facades to commanding commercial buildings, we deliver exceptional craftsmanship that withstands Edmonton's demanding climate.",
     features: [
-      "Residential & Commercial",
-      "New Construction & Repair",
-      "Custom Stone Selection",
-      "Color Matching Services",
+      "Commercial & Residential Projects",
+      "New Construction & Restoration",
+      "Premium Material Selection",
+      "Precision Color Matching",
+      "Edmonton Climate-Tested Methods",
     ],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80",
+    image: "/images/services/brick-stone-masonry.webp",
+    imageAlt: "Large commercial brick complex - Olympus Masonry Edmonton",
   },
   {
-    title: "Retaining Walls & Patios",
-    description: "Beautiful and functional outdoor spaces built to withstand Edmonton's harsh climate. Transform your property with expertly crafted hardscaping.",
+    title: "Patios & Outdoor Spaces",
+    description: "Create stunning outdoor living areas that enhance your property value and lifestyle. Our expertly crafted patios, walkways, and hardscaping solutions are built to endure Edmonton's freeze-thaw cycles and provide years of beauty.",
     features: [
-      "Custom Designs",
-      "Drainage Solutions",
+      "Custom Patio Design & Installation",
+      "Walkways & Pathways",
+      "Interlocking Stone Pavers",
+      "Proper Drainage Solutions",
       "Multi-Season Durability",
-      "Interlocking Stone",
     ],
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&q=80",
+    image: "/images/services/patios-outdoor-spaces.webp",
+    imageAlt: "Custom brick patio walkway - Olympus Masonry",
   },
   {
     title: "Chimneys & Fireplaces",
-    description: "Professional chimney repair, restoration, and new fireplace installations. Keep your home safe and warm with our expert masonry services.",
+    description: "Ensure your home's safety and warmth with professional chimney and fireplace services. From repairs to complete rebuilds, our expert masons deliver reliable installations that meet all safety standards while adding architectural beauty.",
     features: [
-      "Chimney Repair & Rebuild",
+      "Chimney Repair & Rebuilding",
       "Indoor & Outdoor Fireplaces",
-      "Safety Inspections",
-      "Custom Fireplace Design",
+      "Safety Inspections & Maintenance",
+      "Custom Stone Feature Walls",
+      "Code-Compliant Installations",
     ],
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop&q=80",
+    image: "/images/services/chimneys-fireplaces.webp",
+    imageAlt: "Residential stone chimney installation - Olympus Masonry",
   },
   {
-    title: "Winter Masonry",
-    description: "Don't let cold weather stop your project. We specialize in winter masonry using cold-weather certified techniques and materials.",
+    title: "Winter Masonry Services",
+    description: "Don't let cold weather delay your project. As Edmonton winter masonry specialists, we use advanced cold-weather techniques and heated materials to deliver quality installations year-round, ensuring your project stays on schedule.",
     features: [
-      "Cold-Weather Certified",
-      "Year-Round Availability",
-      "Emergency Repairs",
+      "Cold-Weather Certified Techniques",
+      "Year-Round Project Availability",
       "Heated Mortar & Materials",
+      "Weather-Protected Work Areas",
+      "No Compromise on Quality",
     ],
-    image: "https://images.unsplash.com/photo-1604782206219-3b9576575203?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Concrete Work",
-    description: "Durable concrete solutions for foundations, walkways, driveways, and structural repairs. Quality concrete work that lasts.",
-    features: [
-      "Foundations & Footings",
-      "Decorative Concrete",
-      "Repair & Restoration",
-      "Stamped Concrete",
-    ],
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Restoration & Repair",
-    description: "Expert restoration of heritage buildings and repair of damaged masonry. Preserve the beauty and integrity of your property.",
-    features: [
-      "Heritage Restoration",
-      "Tuckpointing",
-      "Brick Replacement",
-      "Structural Repairs",
-    ],
-    image: "https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800&h=600&fit=crop&q=80",
+    image: "/images/services/winter-masonry.webp",
+    imageAlt: "Winter residential stone home - Olympus Masonry Edmonton",
   },
 ];
 
@@ -85,13 +71,13 @@ export default function Services() {
       <section className="bg-olympus-black text-white py-24 px-6">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="inline-block border-2 border-olympus-gold px-4 py-2 mb-8">
-            <span className="font-heading uppercase tracking-widest text-olympus-gold text-sm">Our Services</span>
+            <span className="font-heading uppercase tracking-widest text-olympus-gold text-sm">Our Specializations</span>
           </div>
           <h1 className="text-6xl md:text-7xl font-display mb-6 leading-none">
             EXPERT MASONRY<br />SERVICES
           </h1>
           <p className="text-xl font-body text-gray-300 max-w-2xl mx-auto">
-            Comprehensive masonry solutions for residential and commercial projects in Edmonton and surrounding areas.
+            Premier brick, stone, and masonry craftsmanship serving Edmonton and surrounding areas. Quality work, year-round.
           </p>
         </div>
       </section>
@@ -110,10 +96,10 @@ export default function Services() {
                 <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={service.imageAlt}
                     width={800}
                     height={600}
-                    className="w-full h-[400px] object-cover"
+                    className="w-full h-[400px] object-cover shadow-lg"
                   />
                 </div>
                 <div>
@@ -139,6 +125,59 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Why Choose Olympus Section */}
+      <section className="bg-gray-50 py-16 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-5xl font-display text-olympus-black mb-4">
+              WHY CHOOSE OLYMPUS MASONRY
+            </h2>
+            <div className="w-20 h-1 bg-olympus-gold mx-auto"></div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-olympus-gold mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-olympus-black" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-heading text-olympus-black mb-3 uppercase">
+                Licensed & Insured
+              </h3>
+              <p className="text-gray-600 font-body">
+                Fully licensed and insured for your peace of mind and project protection.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-olympus-gold mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-olympus-black" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-heading text-olympus-black mb-3 uppercase">
+                Year-Round Service
+              </h3>
+              <p className="text-gray-600 font-body">
+                Cold-weather certified for winter masonry. Your project doesn't have to wait for spring.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-olympus-gold mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-olympus-black" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-heading text-olympus-black mb-3 uppercase">
+                Expert Craftsmen
+              </h3>
+              <p className="text-gray-600 font-body">
+                Skilled masons dedicated to delivering exceptional quality on every project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-olympus-gold py-16 px-6">
         <div className="container mx-auto max-w-4xl text-center">
@@ -156,10 +195,10 @@ export default function Services() {
               Call: 403-919-5272
             </a>
             <a
-              href="/contact"
+              href="mailto:ollympus1@outlook.com"
               className="border-2 border-olympus-black text-olympus-black px-10 py-5 font-heading uppercase tracking-wider text-lg hover:bg-olympus-black hover:text-olympus-gold transition-all duration-200"
             >
-              Request Quote
+              Email Us
             </a>
           </div>
         </div>
