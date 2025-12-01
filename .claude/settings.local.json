@@ -119,7 +119,8 @@
       "Bash(do if [ -f \"$img\" ])",
       "Bash(then echo \"✅ $img\" else echo \"❌ MISSING: $img\" fi done)",
       "Bash(pkill:*)",
-      "mcp__playwright__browser_install"
+      "mcp__playwright__browser_install",
+      "mcp__puppeteer__puppeteer_navigate"
     ],
     "deny": [],
     "ask": []

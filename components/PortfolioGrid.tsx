@@ -18,7 +18,7 @@ export default function PortfolioGrid({ projects }: PortfolioGridProps) {
   const [activeFilter, setActiveFilter] = useState("All");
 
   // Get unique categories for filter buttons
-  const categories = ["All", "Commercial", "Residential", "Interior", "Outdoor", "Fireplace"];
+  const categories = ["All", "Commercial", "Residential", "Interior", "Outdoor"];
 
   // Filter projects based on active filter
   const filteredProjects = projects.filter((project) => {
@@ -34,9 +34,6 @@ export default function PortfolioGrid({ projects }: PortfolioGridProps) {
     }
     if (activeFilter === "Outdoor") {
       return project.category.includes("Outdoor");
-    }
-    if (activeFilter === "Fireplace") {
-      return project.category.includes("Fireplace") || project.category.includes("Chimney");
     }
     return true;
   });

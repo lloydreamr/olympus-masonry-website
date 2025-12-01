@@ -15,13 +15,19 @@
     #D4A657 10%,
     #D4A657 90%,
     transparent 100%);
+  animation: pulse-divider 3s ease-in-out infinite;
+}
+
+@keyframes pulse-divider {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
 }
 
 .split-left {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 80px 100px;
 }
 
 .split-right {
@@ -37,6 +43,61 @@
   object-fit: cover;
 }
 
+/* Premium Button Styles */
+.premium-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 25px -5px rgba(212, 166, 87, 0.3);
+}
+
+.premium-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -10px rgba(212, 166, 87, 0.4);
+}
+
+.premium-button:active {
+  transform: translateY(0);
+}
+
+/* Fade-in Animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Stagger animations for lists */
+.stagger-children > * {
+  opacity: 0;
+  animation: fade-in-up 0.5s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* Premium Badge Styles */
+.premium-badge {
+  border: 1px solid rgba(212, 166, 87, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.premium-badge:hover {
+  border-color: rgba(212, 166, 87, 0.6);
+  background: rgba(212, 166, 87, 0.05);
+}
+
 @media (max-width: 1024px) {
   .split-section {
     grid-template-columns: 1fr;
@@ -49,11 +110,22 @@
   }
 
   .split-left {
-    padding: 40px 24px;
-    min-height: 60vh;
+    padding: 50px 24px; /* Slightly reduced for more compact mobile */
+    min-height: auto;
   }
 
   .split-right {
-    min-height: 50vh;
+    height: 300px; /* Reduced from 400px - more compact */
+    min-height: 300px;
   }
+
+  .split-right img {
+    /* No transforms on mobile - better UX */
+  }
+}
+
+/* Ensure footer is always visible */
+footer {
+  position: relative;
+  z-index: 10;
 }

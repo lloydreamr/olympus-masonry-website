@@ -86,10 +86,10 @@ const projects = [
 
   // Fireplace & Chimney Work (1) - Unique specialty
   {
-    title: "Luxury Stone Fireplace Feature",
-    category: "Fireplaces & Chimneys",
-    description: "Stunning stone fireplace feature wall in luxury residential home with custom stonework and elegant design.",
-    image: "/images/portfolio/chimneys/stone-fireplace-feature-wall.webp",
+    title: "Residential Stone Chimney",
+    category: "Chimneys & Masonry",
+    description: "Professional stone chimney construction for luxury residential home. Expert masonry work ensuring safety, durability, and aesthetic appeal.",
+    image: "/images/portfolio/chimneys/stone-chimney-residential-01.webp",
   },
 
   // Additional Commercial (1) - Keeps some commercial variety
