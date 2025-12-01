@@ -1,66 +1,103 @@
-import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PortfolioGrid from "@/components/PortfolioGrid";
 
 export const metadata = {
-  title: "Portfolio - Olympus Masonry",
-  description: "View our portfolio of completed masonry projects in Edmonton. Quality brick work, stone installations, patios, retaining walls, and more.",
+  title: "Portfolio - Edmonton Masonry Projects | Olympus Masonry",
+  description: "View our completed masonry projects: commercial retail (Insight Optometry, Popeyes, Cadence Dental), residential brick & stone work, interior stone features, patios, fireplaces, and chimneys in Edmonton, Alberta.",
 };
 
 const projects = [
+  // Commercial Retail Projects (3) - NEW! Shows diverse business types
   {
-    title: "Residential Brick Patio",
-    category: "Patios & Outdoor Spaces",
-    description: "Custom brick patio with intricate herringbone pattern. Built to withstand Edmonton winters.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80",
+    title: "Insight Optometry Commercial Storefront",
+    category: "Commercial Retail",
+    description: "Modern commercial storefront for Insight Optometry featuring dark charcoal brick facade with stone columns and professional glass entrance.",
+    image: "/images/portfolio/commercial-retail/insight-optometry-storefront.webp",
   },
   {
-    title: "Stone Retaining Wall",
-    category: "Retaining Walls",
-    description: "Multi-tiered natural stone retaining wall with integrated drainage system.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&q=80",
+    title: "Cadence Dental Clinic Facade",
+    category: "Healthcare Commercial",
+    description: "Contemporary dental clinic with dark brick accent panels showcasing modern architectural design and professional finish.",
+    image: "/images/portfolio/commercial-retail/cadence-dental-clinic.webp",
   },
   {
-    title: "Custom Outdoor Fireplace",
-    category: "Fireplaces",
-    description: "Stunning outdoor fireplace and entertainment area with stone veneer.",
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop&q=80",
+    title: "Popeyes Louisiana Kitchen Restaurant",
+    category: "Restaurant Commercial",
+    description: "Restaurant exterior featuring light gray brick facade with modern design elements and branded storefront signage.",
+    image: "/images/portfolio/commercial-retail/popeyes-restaurant.webp",
+  },
+
+  // Residential Brick Projects (2) - Reduced from 5, keeping best examples
+  {
+    title: "Mid-Rise Residential Brick Building",
+    category: "Residential Brick Work",
+    description: "Modern mid-rise residential building with expert brick masonry craftsmanship and clean contemporary design.",
+    image: "/images/portfolio/brick-work/midrise-residential-brick-01.webp",
   },
   {
-    title: "Commercial Brick Facade",
+    title: "Mixed Brick and Stone Building",
+    category: "Residential Mixed Materials",
+    description: "Multi-story residential building showcasing versatile masonry skills with mixed brick and stone facade.",
+    image: "/images/portfolio/brick-work/mixed-brick-stone-building-01.webp",
+  },
+
+  // Residential Stone Projects (2) - Reduced from 5, keeping best examples
+  {
+    title: "Modern Stone Veneer Facade",
+    category: "Residential Stone Work",
+    description: "Contemporary home featuring modern stone veneer facade with clean architectural lines and professional installation.",
+    image: "/images/portfolio/stone-work/modern-stone-veneer-facade-01.webp",
+  },
+  {
+    title: "Stone Entry Feature Wall",
+    category: "Residential Stone Work",
+    description: "Modern residential home with prominent stone entry feature wall showcasing expert craftsmanship.",
+    image: "/images/portfolio/stone-work/modern-stone-entry-feature-01.webp",
+  },
+
+  // Interior Stone Work (2) - Unique project types
+  {
+    title: "Custom Stone Kitchen Feature Wall",
+    category: "Interior Stone Work",
+    description: "Luxury custom stone feature wall in modern kitchen interior with professional finish and attention to detail.",
+    image: "/images/portfolio/stone-work/custom-stone-kitchen-wall-01.webp",
+  },
+  {
+    title: "Stone Feature Wall with Wood Beam",
+    category: "Interior Stone Work",
+    description: "Elegant stone feature wall with wooden beam detail in residential interior showcasing refined craftsmanship.",
+    image: "/images/portfolio/stone-work/stone-feature-wall-beam-01.webp",
+  },
+
+  // Outdoor Living Spaces (2) - Patios & Walkways
+  {
+    title: "Brick Exterior Walkway",
+    category: "Outdoor Living Spaces",
+    description: "Professional brick walkway installation for residential property with expert laying and finishing.",
+    image: "/images/portfolio/patios/brick-exterior-walkway-01.webp",
+  },
+  {
+    title: "Brick Patio Installation",
+    category: "Outdoor Living Spaces",
+    description: "Custom brick patio and walkway with expert craftsmanship, attention to detail, and durable construction.",
+    image: "/images/portfolio/patios/brick-patio-walkway-01.webp",
+  },
+
+  // Fireplace & Chimney Work (1) - Unique specialty
+  {
+    title: "Luxury Stone Fireplace Feature",
+    category: "Fireplaces & Chimneys",
+    description: "Stunning stone fireplace feature wall in luxury residential home with custom stonework and elegant design.",
+    image: "/images/portfolio/chimneys/stone-fireplace-feature-wall.webp",
+  },
+
+  // Additional Commercial (1) - Keeps some commercial variety
+  {
+    title: "Commercial Storefront Brick Facade",
     category: "Commercial Projects",
-    description: "Complete brick facade installation for commercial building in downtown Edmonton.",
-    image: "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Heritage Chimney Restoration",
-    category: "Restoration",
-    description: "Professional restoration of heritage home chimney using period-accurate materials and techniques.",
-    image: "https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Winter Construction Project",
-    category: "Winter Masonry",
-    description: "Successful winter masonry project using cold-weather certified materials and techniques.",
-    image: "https://images.unsplash.com/photo-1604782206219-3b9576575203?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Decorative Stone Walkway",
-    category: "Walkways & Paths",
-    description: "Beautiful flagstone walkway with natural stone borders and plantings.",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Residential Driveway",
-    category: "Driveways",
-    description: "Interlocking stone driveway with custom border design and sealing.",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Indoor Fireplace Installation",
-    category: "Fireplaces",
-    description: "Custom stone fireplace installation with handcrafted mantel and hearth.",
-    image: "https://images.unsplash.com/photo-1598928636135-d146006ff4be?w=800&h=600&fit=crop&q=80",
+    description: "Professional brick facade installation for commercial storefront in Edmonton with modern design.",
+    image: "/images/portfolio/brick-work/commercial-storefront-brick-01.webp",
   },
 ];
 
@@ -70,10 +107,10 @@ export default function Portfolio() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-olympus-black text-white py-24 px-6">
+      <section className="bg-olympus-black text-white py-24 px-6" role="banner">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="inline-block border-2 border-olympus-gold px-4 py-2 mb-8">
-            <span className="font-heading uppercase tracking-widest text-olympus-gold text-sm">Our Work</span>
+            <span className="font-heading uppercase tracking-widest text-olympus-gold text-sm" aria-label="Section label">Our Work</span>
           </div>
           <h1 className="text-6xl md:text-7xl font-display mb-6 leading-none">
             PROJECT<br />PORTFOLIO
@@ -84,47 +121,19 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Portfolio Grid */}
-      <section className="py-16 px-6 bg-white">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className="group relative overflow-hidden">
-                <div className="relative h-[400px] overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-olympus-black via-olympus-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <div className="text-olympus-gold font-heading text-xs uppercase tracking-wider mb-2">
-                      {project.category}
-                    </div>
-                    <h3 className="text-2xl font-heading mb-2">{project.title}</h3>
-                    <p className="text-sm font-body text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Portfolio Grid with Filters */}
+      <PortfolioGrid projects={projects} />
 
       {/* Stats Section */}
       <section className="bg-olympus-gold py-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-display text-white mb-2">500+</div>
+              <div className="text-5xl font-display text-white mb-2">200+</div>
               <div className="text-sm font-heading text-gray-800 uppercase">Projects Completed</div>
             </div>
             <div>
-              <div className="text-5xl font-display text-white mb-2">15+</div>
+              <div className="text-5xl font-display text-white mb-2">4+</div>
               <div className="text-sm font-heading text-gray-800 uppercase">Years Experience</div>
             </div>
             <div>

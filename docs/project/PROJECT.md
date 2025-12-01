@@ -88,7 +88,7 @@
 ## Technical Stack
 
 ### Frontend
-- **Framework**: Next.js 15 (App Router)
+- **Framework**: Next.js 16.0.5 (App Router)
 - **Library**: React 19
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS

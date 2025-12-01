@@ -617,7 +617,7 @@ body, p, a, li {
    - Image/icon for each
 
 4. **Trust Signals:**
-   - Years in business (use "15+" as placeholder)
+   - Years in business (use "4+" - founded 2021)
    - "Licensed & Insured"
    - "Year-Round Service"
    - "Edmonton Local"

@@ -98,7 +98,7 @@ export default function Contact() {
           <h2 className="text-4xl font-display text-olympus-black text-center mb-12">WHY CHOOSE OLYMPUS?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-display text-white mb-4">15+</div>
+              <div className="text-5xl font-display text-white mb-4">4+</div>
               <h3 className="font-heading uppercase text-sm tracking-wider text-gray-800 mb-2">Years Experience</h3>
               <p className="text-sm font-body text-gray-700">
                 Proven track record of quality craftsmanship in Edmonton

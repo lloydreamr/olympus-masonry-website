@@ -6,14 +6,14 @@
 
 ## Overview
 
-Modern, production-grade web application built with Next.js 15, optimized for performance, SEO, and user experience.
+Modern, production-grade web application built with Next.js 16.0.5, optimized for performance, SEO, and user experience.
 
 ---
 
 ## Frontend Stack
 
 ### Framework & Library
-- **Next.js 15** (App Router)
+- **Next.js 16.0.5** (App Router)
   - Server-side rendering (SSR)
   - Static site generation (SSG) where beneficial
   - API routes for backend functionality

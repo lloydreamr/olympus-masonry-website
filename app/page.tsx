@@ -34,8 +34,8 @@ export default function Home() {
 
         <div className="split-right">
           <Image
-            src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c?w=1920&h=1080&fit=crop&q=80"
-            alt="Masonry Work"
+            src="/images/hero/commercial-brick-building-winter-hero.webp"
+            alt="Modern commercial brick building - Olympus Masonry Edmonton"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
@@ -86,8 +86,8 @@ export default function Home() {
 
         <div className="split-right">
           <Image
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop&q=80"
-            alt="Brick Patio"
+            src="/images/sections/brick-work/commercial-corner-building-modern.webp"
+            alt="Contemporary corner brick building - Commercial masonry Edmonton"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
@@ -137,8 +137,8 @@ export default function Home() {
 
         <div className="split-right">
           <Image
-            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
-            alt="Retaining Wall"
+            src="/images/sections/patios/custom-stone-patio-01.webp"
+            alt="Custom stone patio installation - Olympus Masonry"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
@@ -188,8 +188,8 @@ export default function Home() {
 
         <div className="split-right">
           <Image
-            src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1920&h=1080&fit=crop&q=80"
-            alt="Fireplace"
+            src="/images/sections/chimneys/stone-chimney-residential-01.webp"
+            alt="Residential stone chimney installation - Edmonton masonry"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
@@ -201,7 +201,7 @@ export default function Home() {
       <section className="split-section">
         <div className="split-left bg-olympus-gold">
           <div className="max-w-xl text-center">
-            <div className="text-white font-display text-9xl mb-6">15+</div>
+            <div className="text-white font-display text-9xl mb-6">4+</div>
             <h2 className="text-4xl font-heading text-olympus-black mb-6 uppercase">
               Years of Excellence
             </h2>
@@ -231,8 +231,8 @@ export default function Home() {
 
         <div className="split-right">
           <Image
-            src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=1920&h=1080&fit=crop&q=80"
-            alt="Stone Work"
+            src="/images/sections/brick-work/commercial-large-complex.webp"
+            alt="Large commercial brick building - Olympus Masonry Edmonton"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
@@ -282,8 +282,45 @@ export default function Home() {
 
         <div className="split-right">
           <Image
-            src="https://images.unsplash.com/photo-1604782206219-3b9576575203?w=1920&h=1080&fit=crop&q=80"
-            alt="Winter Work"
+            src="/images/sections/stone-work/residential-winter-stone-home.webp"
+            alt="Winter masonry - Stone home in snow - Year-round service Edmonton"
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
+      {/* Testimonial Section: White left, Image right */}
+      <section className="split-section">
+        <div className="split-left bg-white">
+          <div className="max-w-xl">
+            <div className="mb-8">
+              <svg className="w-12 h-12 text-olympus-gold mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <blockquote className="text-2xl font-heading text-olympus-black mb-6 leading-relaxed">
+              "Exceptional craftsmanship and attention to detail. The team completed our patio ahead of schedule and the results are stunning."
+            </blockquote>
+            <div className="flex items-center mb-4">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              ))}
+            </div>
+            <p className="font-heading text-olympus-black font-semibold text-lg">John M.</p>
+            <p className="text-gray-600">Edmonton, AB</p>
+          </div>
+        </div>
+
+        <div className="split-divider"></div>
+
+        <div className="split-right">
+          <Image
+            src="/images/sections/stone-work/luxury-home-landscaping.webp"
+            alt="Luxury stone home - Completed masonry project Edmonton"
             width={1920}
             height={1080}
             className="w-full h-full object-cover"
@@ -322,11 +359,11 @@ export default function Home() {
 
         <div className="split-right">
           <Image
-            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&h=1080&fit=crop&q=80"
-            alt="Construction"
+            src="/images/sections/stone-work/luxury-tower-stone-home.webp"
+            alt="Modern luxury stone home - Premium masonry Edmonton"
             width={1920}
             height={1080}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </div>
       </section>
