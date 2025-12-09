@@ -1,0 +1,398 @@
+[
+  {
+    "id": "IMG_0098",
+    "thumbnail": "/images/gallery/thumbnail/IMG_0098.webp",
+    "full": "/images/gallery/full/IMG_0098.webp",
+    "alt": "Stone pillar construction for commercial building",
+    "title": "Commercial Stone Pillars",
+    "description": "Precision-cut stone pillar installation for commercial building entrance",
+    "categories": ["commercial", "stone"]
+  },
+  {
+    "id": "IMG_0099",
+    "thumbnail": "/images/gallery/thumbnail/IMG_0099.webp",
+    "full": "/images/gallery/full/IMG_0099.webp",
+    "alt": "Luxury home with exterior stone chimney",
+    "title": "Stone Chimney Estate",
+    "description": "Custom exterior stone chimney on luxury residential property",
+    "categories": ["residential", "stone", "chimneys"]
+  },
+  {
+    "id": "IMG_0112",
+    "thumbnail": "/images/gallery/thumbnail/IMG_0112.webp",
+    "full": "/images/gallery/full/IMG_0112.webp",
+    "alt": "Stunning stone turret on luxury home",
+    "title": "Stone Turret Feature",
+    "description": "Architectural stone turret adding character to executive home",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_0465",
+    "thumbnail": "/images/gallery/thumbnail/IMG_0465.webp",
+    "full": "/images/gallery/full/IMG_0465.webp",
+    "alt": "Residential brick exterior with modern design",
+    "title": "Modern Brick Residence",
+    "description": "Contemporary brick facade with clean lines and modern aesthetics",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_0756",
+    "thumbnail": "/images/gallery/thumbnail/IMG_0756.webp",
+    "full": "/images/gallery/full/IMG_0756.webp",
+    "alt": "Commercial brick facade construction",
+    "title": "Commercial Brick Facade",
+    "description": "Large-scale brick installation on commercial building exterior",
+    "categories": ["commercial", "brick"]
+  },
+  {
+    "id": "IMG_1034",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1034.webp",
+    "full": "/images/gallery/full/IMG_1034.webp",
+    "alt": "Detailed brick texture and craftsmanship",
+    "title": "Brick Craftsmanship",
+    "description": "Close-up detail showing precision brickwork and mortar finishing",
+    "categories": ["brick"]
+  },
+  {
+    "id": "IMG_1046",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1046.webp",
+    "full": "/images/gallery/full/IMG_1046.webp",
+    "alt": "Gray brick residential construction",
+    "title": "Gray Brick Home",
+    "description": "Elegant gray brick exterior on new residential construction",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_1051",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1051.webp",
+    "full": "/images/gallery/full/IMG_1051.webp",
+    "alt": "Gray brick detail with decorative cap",
+    "title": "Decorative Brick Cap",
+    "description": "Custom gray brick detail with decorative stone cap accent",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_1054",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1054.webp",
+    "full": "/images/gallery/full/IMG_1054.webp",
+    "alt": "Stone pillar construction for luxury home",
+    "title": "Luxury Stone Pillars",
+    "description": "Stacked stone pillar installation on high-end residential project",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1058",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1058.webp",
+    "full": "/images/gallery/full/IMG_1058.webp",
+    "alt": "Stone veneer installation in progress",
+    "title": "Stone Veneer Install",
+    "description": "Professional stone veneer application in progress",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1059",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1059.webp",
+    "full": "/images/gallery/full/IMG_1059.webp",
+    "alt": "Modern luxury home with stone pillars - side view",
+    "title": "Executive Stone Home",
+    "description": "Modern luxury residence featuring prominent stone pillar work",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1060",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1060.webp",
+    "full": "/images/gallery/full/IMG_1060.webp",
+    "alt": "Modern luxury home with stone pillars - full view",
+    "title": "Stone Pillar Estate",
+    "description": "Full view of luxury home with custom stone pillar entrance",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1093",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1093.webp",
+    "full": "/images/gallery/full/IMG_1093.webp",
+    "alt": "Stone veneer garage and entry installation",
+    "title": "Garage Stone Veneer",
+    "description": "Stone veneer application on garage and entryway facade",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1103",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1103.webp",
+    "full": "/images/gallery/full/IMG_1103.webp",
+    "alt": "Rooftop stone chimney construction",
+    "title": "Rooftop Stone Chimney",
+    "description": "New stone chimney construction on residential rooftop",
+    "categories": ["residential", "stone", "chimneys"]
+  },
+  {
+    "id": "IMG_1105",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1105.webp",
+    "full": "/images/gallery/full/IMG_1105.webp",
+    "alt": "Stone entry with timber frame detail",
+    "title": "Stone & Timber Entry",
+    "description": "Custom stone entryway complemented by timber frame accents",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1110",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1110.webp",
+    "full": "/images/gallery/full/IMG_1110.webp",
+    "alt": "Brick residential exterior with scaffolding",
+    "title": "Brick Home Build",
+    "description": "Residential brick exterior during active construction phase",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_1125",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1125.webp",
+    "full": "/images/gallery/full/IMG_1125.webp",
+    "alt": "Brick half-wall detail under window",
+    "title": "Window Brick Detail",
+    "description": "Precision brick half-wall installation beneath window feature",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_1129",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1129.webp",
+    "full": "/images/gallery/full/IMG_1129.webp",
+    "alt": "Brick patio and porch exterior",
+    "title": "Brick Porch & Patio",
+    "description": "Welcoming brick patio and porch on residential exterior",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_1274",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1274.webp",
+    "full": "/images/gallery/full/IMG_1274.webp",
+    "alt": "Stone masonry residential project",
+    "title": "Residential Stone Work",
+    "description": "Quality stone masonry on residential home exterior",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1598",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1598.webp",
+    "full": "/images/gallery/full/IMG_1598.webp",
+    "alt": "Residential stone veneer installation",
+    "title": "Stone Veneer Facade",
+    "description": "Beautiful stone veneer installation enhancing home curb appeal",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1680",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1680.webp",
+    "full": "/images/gallery/full/IMG_1680.webp",
+    "alt": "Grand stacked stone fireplace - full view",
+    "title": "Grand Stone Fireplace",
+    "description": "Floor-to-ceiling stacked stone fireplace as stunning focal point",
+    "categories": ["residential", "stone", "fireplaces"]
+  },
+  {
+    "id": "IMG_1689",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1689.webp",
+    "full": "/images/gallery/full/IMG_1689.webp",
+    "alt": "Stacked stone fireplace with linear insert",
+    "title": "Modern Stone Fireplace",
+    "description": "Contemporary stacked stone fireplace with sleek linear gas insert",
+    "categories": ["residential", "stone", "fireplaces"]
+  },
+  {
+    "id": "IMG_1703",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1703.webp",
+    "full": "/images/gallery/full/IMG_1703.webp",
+    "alt": "Stone masonry feature on custom home",
+    "title": "Custom Stone Feature",
+    "description": "Distinctive stone masonry accent on custom-built residence",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_1717",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1717.webp",
+    "full": "/images/gallery/full/IMG_1717.webp",
+    "alt": "Modern luxury home with white brick",
+    "title": "White Brick Luxury",
+    "description": "Stunning modern home featuring elegant white brick exterior",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_1738",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1738.webp",
+    "full": "/images/gallery/full/IMG_1738.webp",
+    "alt": "White brick residential exterior",
+    "title": "White Brick Home",
+    "description": "Clean, contemporary white brick on residential facade",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_1878",
+    "thumbnail": "/images/gallery/thumbnail/IMG_1878.webp",
+    "full": "/images/gallery/full/IMG_1878.webp",
+    "alt": "Brick masonry residential project",
+    "title": "Residential Brick Build",
+    "description": "Complete brick masonry work on new home construction",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_2027",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2027.webp",
+    "full": "/images/gallery/full/IMG_2027.webp",
+    "alt": "Interior stone kitchen wall with wood ceiling",
+    "title": "Stone Kitchen Feature",
+    "description": "Interior stone accent wall with exposed wood beam ceiling",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_2028",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2028.webp",
+    "full": "/images/gallery/full/IMG_2028.webp",
+    "alt": "Kitchen stone backsplash feature",
+    "title": "Stone Backsplash",
+    "description": "Custom stone backsplash creating rustic kitchen ambiance",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_2318",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2318.webp",
+    "full": "/images/gallery/full/IMG_2318.webp",
+    "alt": "River rock installation in progress",
+    "title": "River Rock Install",
+    "description": "Natural river rock stone installation in progress",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_2329",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2329.webp",
+    "full": "/images/gallery/full/IMG_2329.webp",
+    "alt": "River rock cottage entry - completed",
+    "title": "River Rock Cottage",
+    "description": "Charming cottage entry featuring natural river rock stonework",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_2361",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2361.webp",
+    "full": "/images/gallery/full/IMG_2361.webp",
+    "alt": "Stone exterior residential project",
+    "title": "Residential Stone Exterior",
+    "description": "Complete stone exterior on residential home project",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_2423",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2423.webp",
+    "full": "/images/gallery/full/IMG_2423.webp",
+    "alt": "Brick exterior construction",
+    "title": "Brick Exterior Build",
+    "description": "Professional brick exterior construction in progress",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_2430",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2430.webp",
+    "full": "/images/gallery/full/IMG_2430.webp",
+    "alt": "Brick masonry installation",
+    "title": "Brick Installation",
+    "description": "Expert brick masonry installation on residential property",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_2455",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2455.webp",
+    "full": "/images/gallery/full/IMG_2455.webp",
+    "alt": "Commercial red brick building facade",
+    "title": "Red Brick Commercial",
+    "description": "Classic red brick facade on commercial building project",
+    "categories": ["commercial", "brick"]
+  },
+  {
+    "id": "IMG_2461",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2461.webp",
+    "full": "/images/gallery/full/IMG_2461.webp",
+    "alt": "Commercial brick construction project",
+    "title": "Commercial Brick Build",
+    "description": "Large-scale commercial brick construction project",
+    "categories": ["commercial", "brick"]
+  },
+  {
+    "id": "IMG_2465",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2465.webp",
+    "full": "/images/gallery/full/IMG_2465.webp",
+    "alt": "Commercial building brick work",
+    "title": "Commercial Brickwork",
+    "description": "Quality brickwork on commercial building exterior",
+    "categories": ["commercial", "brick"]
+  },
+  {
+    "id": "IMG_2502",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2502.webp",
+    "full": "/images/gallery/full/IMG_2502.webp",
+    "alt": "Residential stone exterior project",
+    "title": "Stone Home Exterior",
+    "description": "Complete stone exterior transformation on residential home",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_2506",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2506.webp",
+    "full": "/images/gallery/full/IMG_2506.webp",
+    "alt": "Beautiful river rock cottage home",
+    "title": "River Rock Home",
+    "description": "Stunning cottage home with natural river rock siding",
+    "categories": ["residential", "stone"]
+  },
+  {
+    "id": "IMG_2511",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2511.webp",
+    "full": "/images/gallery/full/IMG_2511.webp",
+    "alt": "Residential brick construction",
+    "title": "Brick Home Construction",
+    "description": "New residential brick construction in Edmonton",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_2514",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2514.webp",
+    "full": "/images/gallery/full/IMG_2514.webp",
+    "alt": "Multi-unit residential brick exterior",
+    "title": "Multi-Unit Brick",
+    "description": "Multi-unit residential building with uniform brick facade",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_2538",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2538.webp",
+    "full": "/images/gallery/full/IMG_2538.webp",
+    "alt": "Residential brick home exterior",
+    "title": "Brick Home Exterior",
+    "description": "Beautiful brick exterior on Edmonton residential home",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "IMG_2542",
+    "thumbnail": "/images/gallery/thumbnail/IMG_2542.webp",
+    "full": "/images/gallery/full/IMG_2542.webp",
+    "alt": "Multi-unit residential with gray brick",
+    "title": "Gray Brick Multi-Unit",
+    "description": "Modern multi-unit development with elegant gray brick",
+    "categories": ["residential", "brick"]
+  },
+  {
+    "id": "insight-optometry-storefront",
+    "thumbnail": "/images/gallery/thumbnail/insight-optometry-storefront.webp",
+    "full": "/images/gallery/full/insight-optometry-storefront.webp",
+    "alt": "Insight Optometry commercial storefront with brick facade",
+    "title": "Insight Optometry",
+    "description": "Commercial storefront with custom brick facade design",
+    "categories": ["commercial", "brick"]
+  },
+  {
+    "id": "popeyes-restaurant",
+    "thumbnail": "/images/gallery/thumbnail/popeyes-restaurant.webp",
+    "full": "/images/gallery/full/popeyes-restaurant.webp",
+    "alt": "Popeyes restaurant commercial brick work",
+    "title": "Popeyes Restaurant",
+    "description": "Commercial restaurant brick exterior with modern design",
+    "categories": ["commercial", "brick"]
+  }
+]

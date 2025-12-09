@@ -16,10 +16,11 @@
 ## 📋 Quick Links
 
 - **Project Overview**: [PROJECT.md](./docs/project/PROJECT.md)
-- **Client Info**: [docs/client-info.md](./docs/client-info.md)
+- **Client Info**: [docs/project/client-info.md](./docs/project/client-info.md)
 - **Tech Stack**: [docs/development/tech-stack.md](./docs/development/tech-stack.md)
 - **Image Workflow**: [docs/development/image-workflow.md](./docs/development/image-workflow.md)
 - **Brand Guide**: [docs/design/brand-guide.md](./docs/design/brand-guide.md)
+- **Documentation Index**: [docs/index.md](./docs/index.md)
 
 ---
 
@@ -37,63 +38,70 @@
 
 ### Prerequisites
 - Node.js 18+
-- pnpm (or npm)
+- npm
 - Git
 
 ### Installation
 
 ```bash
-# Clone repository (if not already)
-cd olympus-masonry-website
+# Clone repository
+git clone <repo-url>
+cd olympus-mansory
 
-# Install dependencies (after Next.js is initialized)
-pnpm install
+# Install dependencies
+npm install
 
 # Run development server
-pnpm dev
+npm run dev
 
 # Open http://localhost:3000
 ```
 
-### First Time Setup
+### Project Documentation
 
-1. **Review project documentation**:
-   - Read [PROJECT.md](./docs/project/PROJECT.md) for overview
-   - Review [docs/client-info.md](./docs/client-info.md) for client details
-   - Check [docs/development/tech-stack.md](./docs/development/tech-stack.md) for technical decisions
-
-2. **Curate client images**:
-   - Review images in `assets/images/01-originals/`
-   - Follow workflow in [docs/development/image-workflow.md](./docs/development/image-workflow.md)
-
-3. **Initialize Next.js** (when ready):
-   ```bash
-   npx create-next-app@latest . --typescript --tailwind --app --src-dir
-   ```
+- Read [docs/index.md](./docs/index.md) for full documentation index
+- Review [docs/project/PROJECT_NOTES.md](./docs/project/PROJECT_NOTES.md) for main page structure
+- Check [docs/development/tech-stack.md](./docs/development/tech-stack.md) for technical details
 
 ---
 
 ## 📁 Project Structure
 
 ```
-olympus-masonry-website/
-├── docs/                     # Documentation
-│   ├── project/              # Project overview docs
-│   ├── design/               # Design and brand docs
-│   ├── development/          # Development docs
-│   ├── research/             # Research artifacts
-│   ├── client-info.md        # Client contact & requirements
-│   └── archive/              # Completed phases (01-research, 02-proposal, 03-design-samples)
+olympus-mansory/
+├── app/                      # Next.js App Router pages
+│   ├── page.tsx              # Homepage (8 sections)
+│   ├── layout.tsx            # Root layout
+│   ├── globals.css           # Global styles
+│   ├── portfolio/            # Portfolio page
+│   ├── services/             # Services page
+│   └── contact/              # Contact page
 │
-├── design/                   # Design resources
+├── components/               # React components
+│   ├── Header.tsx            # Navigation header
+│   ├── Footer.tsx            # Site footer
+│   └── ...                   # Other components
+│
+├── public/                   # Static assets (served at /)
+│   └── images/               # Optimized web images
+│
+├── docs/                     # Documentation (see docs/index.md)
+│   ├── project/              # Core project docs
+│   ├── design/               # Brand & design docs
+│   ├── development/          # Technical docs
+│   ├── research/             # Market research
+│   └── archive/              # Historical documents
+│
+├── design/                   # Design assets
+│   ├── wireframes/           # Wireframe files
+│   ├── design-system/        # Design tokens
 │   └── sample-5-chosen/      # Chosen design reference
 │
-├── assets/                   # Media assets
-│   └── images/               # Image pipeline (incoming → originals → curated → edited → web-ready)
+├── assets/                   # Source media assets
+│   ├── images/               # Image pipeline
+│   └── logos/                # Logo files
 │
-├── src/                      # Next.js application (to be initialized)
-│
-└── scripts/                  # Utility scripts
+└── samples/                  # Design samples
 ```
 
 ---
@@ -143,12 +151,12 @@ git push origin feature/homepage-hero
 
 ### Testing Locally
 ```bash
-# Development mode (hot reload)
-pnpm dev
+# Development mode (hot reload with Turbopack)
+npm run dev
 
 # Production build test
-pnpm build
-pnpm start
+npm run build
+npm run start
 ```
 
 ### Deployment
@@ -159,37 +167,34 @@ Push to `main` branch → Vercel automatically deploys
 ## 📦 Key Dependencies
 
 ### Core
-- `next` - React framework
-- `react` - UI library
-- `typescript` - Type safety
-- `tailwindcss` - Styling
-
-### Services
-- `resend` - Email service (contact forms)
+- `next` v16.0.5 - React framework (App Router)
+- `react` v19.2.0 - UI library
+- `typescript` v5.9 - Type safety
+- `tailwindcss` v3.4 - Styling
 
 ### Dev Tools
 - `eslint` - Code linting
 - `prettier` - Code formatting
-- `husky` - Git hooks
 
 ---
 
-## 🎯 Next Steps
+## 🎯 Project Status
 
-### Immediate
-- [ ] Curate client images (55 photos)
-- [ ] Initialize Next.js project
-- [ ] Set up development environment
-- [ ] Create component structure based on Sample #5
+### Completed
+- [x] Next.js 16 project initialized
+- [x] Homepage with 8-section split layout
+- [x] Portfolio page
+- [x] Services page
+- [x] Contact page
+- [x] Header & Footer components
+- [x] Mobile responsive design
 
-### Development Priorities
-1. Homepage implementation (Sample #5 layout)
-2. Portfolio gallery system
-3. Contact form with email integration
-4. Services pages
-5. About page
-6. Mobile optimization
-7. SEO setup
+### In Progress / Remaining
+- [ ] Right-side visuals for homepage sections
+- [ ] Image optimization and curation
+- [ ] Contact form email integration
+- [ ] SEO optimization
+- [ ] Final deployment to production
 
 ---
 
@@ -204,10 +209,10 @@ Push to `main` branch → Vercel automatically deploys
 
 ## 📝 Notes
 
-- Peter has urgent timeline (high-value client showcase)
-- Winter operations are key differentiator
-- Keep content minimal and visual-first
-- More images expected from Peter during development
+- Winter masonry operations are a key differentiator
+- Split-screen layout with 8 distinct sections on homepage
+- Visual-first design approach
+- See [docs/project/PROJECT_NOTES.md](./docs/project/PROJECT_NOTES.md) for detailed section breakdown
 
 ---
 
@@ -228,5 +233,5 @@ Proprietary - Olympus Masonry Website © 2025
 
 ---
 
-**Last Updated**: November 2025
+**Last Updated**: December 2024
 **Developer**: Lloyd Lizardo

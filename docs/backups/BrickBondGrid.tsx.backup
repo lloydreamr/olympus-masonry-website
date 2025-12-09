@@ -1,0 +1,71 @@
+"use client";
+
+import Image from "next/image";
+
+const brickImages = [
+  { src: "/images/hero/brick-bond/brick-01.webp", alt: "Red brick wall texture" },
+  { src: "/images/hero/brick-bond/brick-02.webp", alt: "Weathered vintage brick" },
+  { src: "/images/hero/brick-bond/brick-03.webp", alt: "Mixed brick with mortar" },
+  { src: "/images/hero/brick-bond/brick-04.webp", alt: "Dark multi-colored brick" },
+  { src: "/images/hero/brick-bond/brick-05.webp", alt: "Salmon red brick wall" },
+  { src: "/images/hero/brick-bond/brick-06.webp", alt: "White painted brick" },
+];
+
+export default function BrickBondGrid() {
+  // Calculate offset: half of one cell width (1/3 = 33.33%, half = 16.67%)
+  const offsetPercent = 16.67;
+
+  return (
+    <div className="w-full h-full flex flex-col bg-black overflow-hidden" style={{ gap: "3px" }}>
+      {/* Row 1 - 3 images */}
+      <div className="flex flex-1 min-h-0" style={{ gap: "3px" }}>
+        {brickImages.slice(0, 3).map((img, index) => (
+          <div key={index} className="relative flex-1 overflow-hidden">
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 33vw, 16vw"
+              priority={index === 0}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Row 2 - Seamless running bond: [brick-06 partial] [brick-04] [brick-05] [brick-06 partial] */}
+      <div
+        className="flex flex-1 min-h-0"
+        style={{
+          gap: "3px",
+          marginLeft: `-${offsetPercent}%`,
+          width: `calc(100% + ${offsetPercent * 2}%)`,
+        }}
+      >
+        {/* Left wrap: brick-06 (showing right portion that would be clipped) */}
+        <div className="relative overflow-hidden" style={{ flex: `0 0 calc(${offsetPercent}% - 1.5px)` }}>
+          <Image
+            src={brickImages[5].src}
+            alt={brickImages[5].alt}
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 16vw, 8vw"
+          />
+        </div>
+
+        {/* Main 3 images: brick-04, brick-05, brick-06 */}
+        {brickImages.slice(3, 6).map((img, index) => (
+          <div key={index} className="relative flex-1 overflow-hidden">
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 33vw, 16vw"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

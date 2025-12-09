@@ -12,7 +12,8 @@
 
 ### Primary Contact: Peter Kolia
 
-**Phone**: 403-919-5272
+**Cell**: 403-919-5272
+**Office**: 780-245-5809
 **Email**: ollympus1@outlook.com
 
 **Location**: Edmonton, Alberta, Canada
@@ -121,7 +122,8 @@
 - Phone: [TBD]
 
 ### Best Contact Method
-- **Urgent**: Cell phone (403-919-5272)
+- **Urgent**: Cell (403-919-5272)
+- **Business**: Office (780-245-5809)
 - **Non-Urgent**: Email (ollympus1@outlook.com)
 
 ### Availability

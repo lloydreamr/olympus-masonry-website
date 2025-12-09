@@ -1,14 +1,86 @@
-import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RunningBondGrid from "@/components/RunningBondGrid";
+
+// Image data for each section
+const heroImages = [
+  { src: "/images/hero/brick-bond/brick-01.webp", alt: "Red brick wall texture" },
+  { src: "/images/hero/brick-bond/stone-02.webp", alt: "Natural stone wall masonry" },
+  { src: "/images/hero/brick-bond/brick-03.webp", alt: "Mixed brick with mortar" },
+  { src: "/images/hero/brick-bond/brick-04.webp", alt: "Dark multi-colored brick" },
+  { src: "/images/hero/brick-bond/brick-05.webp", alt: "Salmon red brick wall" },
+  { src: "/images/hero/brick-bond/brick-06.webp", alt: "White painted brick" },
+];
+
+const brickStoneImages = [
+  { src: "/images/sections/brick-stone/brick-stone-01.webp", alt: "Commercial red brick facade" },
+  { src: "/images/sections/brick-stone/brick-stone-02.webp", alt: "Grey brick wall texture" },
+  { src: "/images/sections/brick-stone/brick-stone-03.webp", alt: "River rock stone entrance" },
+  { src: "/images/sections/brick-stone/brick-stone-04.webp", alt: "Luxury stone residential entrance" },
+  { src: "/images/sections/brick-stone/brick-stone-05.webp", alt: "Stone masonry detail" },
+  { src: "/images/sections/brick-stone/brick-stone-06.webp", alt: "Grey stone pillar detail" },
+];
+
+const patioImages = [
+  // Row 1: Mix of Peter's retaining wall and exterior work
+  { src: "/images/sections/patios/patio-01.webp", alt: "Brick retaining wall with decorative caps" },
+  { src: "/images/sections/patios/patio-02.webp", alt: "Grey brick foundation on modern townhouse" },
+  { src: "/images/sections/patios/patio-03.webp", alt: "Modern red brick commercial building" },
+  // Row 2: Stone veneer + residential brick work (patio-06 wraps around)
+  { src: "/images/sections/patios/patio-04.webp", alt: "Grey stone veneer residential home" },
+  { src: "/images/sections/patios/patio-05.webp", alt: "Multi-toned brick residential exterior" },
+  { src: "/images/sections/patios/patio-06.webp", alt: "Colorful brick patio wall" },
+];
+
+const chimneyImages = [
+  // Row 1: Lead with Peter's work + clean exterior
+  { src: "/images/sections/chimneys/chimney-01.webp", alt: "Modern stacked slate fireplace with TV mount" },
+  { src: "/images/sections/chimneys/chimney-02.webp", alt: "Professional stone chimney on modern residence" },
+  { src: "/images/sections/chimneys/chimney-06.webp", alt: "Clean brick chimney on white house" },
+  // Row 2: Brick variety + warm fireplace wrap-around
+  { src: "/images/sections/chimneys/chimney-05.webp", alt: "Tall multi-toned brick chimney" },
+  { src: "/images/sections/chimneys/chimney-04.webp", alt: "Classic red brick chimney" },
+  { src: "/images/sections/chimneys/chimney-03.webp", alt: "Luxury stone fireplace with burning fire" },
+];
+
+const excellenceImages = [
+  // Row 1: Showcase diverse finished projects
+  { src: "/images/sections/excellence/excellence-01.webp", alt: "River rock stone house with yellow door" },
+  { src: "/images/sections/excellence/excellence-02.webp", alt: "Ultra-modern white mansion" },
+  { src: "/images/sections/excellence/excellence-03.webp", alt: "Modern commercial building with red brick" },
+  // Row 2: Luxury residential masonry (excellence-06 wraps around)
+  { src: "/images/sections/excellence/excellence-04.webp", alt: "Modern grey stone mansion" },
+  { src: "/images/sections/excellence/excellence-05.webp", alt: "Luxury estate with stone turret" },
+  { src: "/images/sections/excellence/excellence-06.webp", alt: "Modern bungalow with stone veneer" },
+];
+
+const winterImages = [
+  { src: "/images/sections/winter/winter-01.webp", alt: "Winter townhouse row with brick" },
+  { src: "/images/sections/winter/winter-02.webp", alt: "Commercial brick building winter" },
+  { src: "/images/sections/winter/winter-03.webp", alt: "Dark brick storefront in snow" },
+  { src: "/images/sections/winter/winter-04.webp", alt: "Winter townhouse complex courtyard" },
+  { src: "/images/sections/winter/winter-05.webp", alt: "Grey townhouse fronts in winter" },
+  { src: "/images/sections/winter/winter-06.webp", alt: "Winter masonry townhouse detail" },
+];
+
+const testimonialImages = [
+  // Row 1: Modern red brick condo building (10841) - various angles
+  { src: "/images/sections/testimonial/testimonial-01.webp", alt: "Modern red brick condo entrance with 10841 address" },
+  { src: "/images/sections/testimonial/testimonial-02.webp", alt: "Red brick mixed-use building entrance" },
+  { src: "/images/sections/testimonial/testimonial-03.webp", alt: "Condo courtyard with water feature" },
+  // Row 2: More angles of the red brick condo project (testimonial-06 wraps around)
+  { src: "/images/sections/testimonial/testimonial-04.webp", alt: "Red brick retail storefront detail" },
+  { src: "/images/sections/testimonial/testimonial-05.webp", alt: "Modern condo building wide angle" },
+  { src: "/images/sections/testimonial/testimonial-06.webp", alt: "Red brick condo street view with trees" },
+];
 
 export default function Home() {
   return (
     <>
       <Header />
 
-      {/* Hero Split Section - Black left, Image right */}
+      {/* Hero Split Section - Black left, Empty right */}
       <section className="split-section">
         <div className="split-left bg-olympus-black text-white">
           <div className="max-w-xl animate-fade-in-up">
@@ -50,19 +122,12 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/hero/commercial-brick-building-winter-hero.webp"
-            alt="Modern commercial brick building - Olympus Masonry Edmonton"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-            priority
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={heroImages} />
         </div>
       </section>
 
-      {/* Section 2: White left, Image right - Brick & Stone */}
+      {/* Section 2: White left, Empty right - Brick & Stone */}
       <section className="split-section">
         <div className="split-left bg-white">
           <div className="max-w-xl">
@@ -102,18 +167,12 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/sections/brick-work/commercial-corner-building-modern.webp"
-            alt="Contemporary corner brick building - Commercial masonry Edmonton"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={brickStoneImages} />
         </div>
       </section>
 
-      {/* Section 3: Black left, Image right - Retaining Walls */}
+      {/* Section 3: Black left, Empty right - Retaining Walls */}
       <section className="split-section">
         <div className="split-left bg-olympus-black text-white">
           <div className="max-w-xl">
@@ -153,18 +212,12 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/sections/patios/custom-stone-patio-01.webp"
-            alt="Custom stone patio installation - Olympus Masonry"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={patioImages} />
         </div>
       </section>
 
-      {/* Section 4: White left, Image right - Chimneys */}
+      {/* Section 4: White left, Empty right - Chimneys */}
       <section className="split-section">
         <div className="split-left bg-white">
           <div className="max-w-xl">
@@ -204,22 +257,16 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/sections/chimneys/stone-chimney-residential-01.webp"
-            alt="Residential stone chimney installation - Edmonton masonry"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={chimneyImages} />
         </div>
       </section>
 
-      {/* Section 5: Gold left (highlight), Image right - Stats */}
+      {/* Section 5: Gold left (highlight), Empty right - Stats */}
       <section className="split-section">
         <div className="split-left bg-olympus-gold">
           <div className="max-w-xl text-center">
-            <div className="text-white font-display text-9xl mb-8 tracking-tight">4+</div>
+            <div className="text-white font-display text-9xl mb-8 tracking-tight">27+</div>
             <h2 className="text-5xl font-heading text-olympus-black mb-6 uppercase tracking-tight">
               Years of Excellence
             </h2>
@@ -247,18 +294,12 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/sections/brick-work/commercial-large-complex.webp"
-            alt="Large commercial brick building - Olympus Masonry Edmonton"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={excellenceImages} />
         </div>
       </section>
 
-      {/* Section 6: Black left, Image right - Winter Masonry */}
+      {/* Section 6: Black left, Empty right - Winter Masonry */}
       <section className="split-section">
         <div className="split-left bg-olympus-black text-white">
           <div className="max-w-xl">
@@ -298,18 +339,12 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/sections/stone-work/residential-winter-stone-home.webp"
-            alt="Winter masonry - Stone home in snow - Year-round service Edmonton"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={winterImages} />
         </div>
       </section>
 
-      {/* Testimonial Section: White left, Image right */}
+      {/* Testimonial Section: White left, Empty right */}
       <section className="split-section">
         <div className="split-left bg-white">
           <div className="max-w-xl">
@@ -319,7 +354,7 @@ export default function Home() {
               </svg>
             </div>
             <blockquote className="text-2xl md:text-3xl font-heading text-olympus-black mb-8 leading-relaxed tracking-tight">
-              "Exceptional craftsmanship and meticulous attention to detail. The team completed our custom patio ahead of schedule and the results are absolutely stunning."
+              "Outstanding quality on our mixed-use condo development. The masonry team delivered flawless brick work across the entire building—on schedule and within budget. Highly recommend for commercial projects."
             </blockquote>
             <div className="flex items-center mb-6 gap-1">
               {[...Array(5)].map((_, i) => (
@@ -330,11 +365,11 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
               <div className="w-12 h-12 rounded-full bg-olympus-gold/10 flex items-center justify-center">
-                <span className="text-olympus-gold font-heading text-xl">J</span>
+                <span className="text-olympus-gold font-heading text-xl">M</span>
               </div>
               <div>
-                <p className="font-heading text-olympus-black font-semibold text-lg">John M.</p>
-                <p className="text-gray-600 text-sm">Residential Client • Edmonton, AB</p>
+                <p className="font-heading text-olympus-black font-semibold text-lg">Mark S.</p>
+                <p className="text-gray-600 text-sm">Property Developer • Edmonton, AB</p>
               </div>
             </div>
           </div>
@@ -342,18 +377,12 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/sections/stone-work/luxury-home-landscaping.webp"
-            alt="Luxury stone home - Completed masonry project Edmonton"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover"
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={testimonialImages} />
         </div>
       </section>
 
-      {/* Final CTA: Black left, Image right */}
+      {/* Final CTA: Black left, Empty right */}
       <section className="split-section">
         <div className="split-left bg-olympus-black text-white">
           <div className="max-w-xl text-center">
@@ -368,13 +397,13 @@ export default function Home() {
                 href="tel:4039195272"
                 className="premium-button bg-olympus-gold text-olympus-black px-12 py-6 font-heading uppercase tracking-widest text-base hover:bg-olympus-gold-light"
               >
-                Call: 403-919-5272
+                Cell: 403-919-5272
               </a>
               <a
-                href="mailto:ollympus1@outlook.com"
+                href="tel:7802455809"
                 className="premium-button border-2 border-white text-white px-12 py-6 font-heading uppercase tracking-widest text-base hover:bg-white hover:text-olympus-black shadow-none"
               >
-                Email Consultation
+                Office: 780-245-5809
               </a>
             </div>
           </div>
@@ -382,14 +411,8 @@ export default function Home() {
 
         <div className="split-divider"></div>
 
-        <div className="split-right">
-          <Image
-            src="/images/sections/stone-work/luxury-tower-stone-home.webp"
-            alt="Modern luxury stone home - Premium masonry Edmonton"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover object-top"
-          />
+        <div className="split-right bg-black p-0 overflow-hidden">
+          <RunningBondGrid images={heroImages} />
         </div>
       </section>
 

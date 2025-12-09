@@ -19,12 +19,14 @@ export default function Footer() {
         </div>
         <p className="text-gray-400 text-sm mb-2">© 2025 Olympus Masonry. Edmonton, AB.</p>
         <p className="text-gray-500 text-xs">
-          <a href="mailto:ollympus1@outlook.com" className="hover:text-olympus-gold transition-colors">
-            ollympus1@outlook.com
-          </a>
-          {" | "}
+          <span className="text-gray-600">Cell:</span>{" "}
           <a href="tel:4039195272" className="hover:text-olympus-gold transition-colors">
             403-919-5272
+          </a>
+          {" | "}
+          <span className="text-gray-600">Office:</span>{" "}
+          <a href="tel:7802455809" className="hover:text-olympus-gold transition-colors">
+            780-245-5809
           </a>
         </p>
       </div>

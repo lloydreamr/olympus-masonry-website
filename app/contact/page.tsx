@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Contact - Olympus Masonry",
-  description: "Contact Olympus Masonry for expert masonry services. Call us at 403-919-5272 or email ollympus1@outlook.com. Serving Edmonton and surrounding areas year-round.",
+  description: "Contact Olympus Masonry for expert masonry services. Call Peter at 403-919-5272 (Cell) or 780-245-5809 (Office). Serving Edmonton and surrounding areas year-round.",
 };
 
 export default function Contact() {
@@ -39,30 +39,53 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            {/* Phone */}
-            <a href="tel:4039195272" className="group bg-gray-50 p-8 text-center hover:bg-olympus-gold transition-colors duration-300">
-              <div className="w-16 h-16 bg-olympus-gold group-hover:bg-olympus-black mx-auto mb-4 flex items-center justify-center transition-colors duration-300">
-                <svg className="w-8 h-8 text-olympus-black group-hover:text-olympus-gold transition-colors duration-300" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                </svg>
+          {/* Phone Section - Primary Contact Method */}
+          <div className="max-w-3xl mx-auto mb-8">
+            <div className="bg-olympus-gold p-8 md:p-10">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-olympus-black flex items-center justify-center">
+                  <svg className="w-6 h-6 text-olympus-gold" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-heading uppercase text-sm tracking-wider text-olympus-black">Call Us Directly</h3>
+                  <p className="text-xs text-gray-700">Preferred contact method</p>
+                </div>
               </div>
-              <h3 className="font-heading uppercase text-sm tracking-wider text-olympus-gold group-hover:text-olympus-black mb-2 transition-colors duration-300">Call Us</h3>
-              <p className="text-3xl font-display text-olympus-black mb-2">403-919-5272</p>
-              <p className="text-sm font-body text-gray-600 group-hover:text-gray-800 transition-colors duration-300">Monday-Saturday</p>
-            </a>
 
-            {/* Email */}
-            <a href="mailto:ollympus1@outlook.com" className="group bg-gray-50 p-8 text-center hover:bg-olympus-gold transition-colors duration-300">
-              <div className="w-16 h-16 bg-olympus-gold group-hover:bg-olympus-black mx-auto mb-4 flex items-center justify-center transition-colors duration-300">
-                <svg className="w-8 h-8 text-olympus-black group-hover:text-olympus-gold transition-colors duration-300" fill="currentColor" viewBox="0 0 20 20">
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Cell */}
+                <a href="tel:4039195272" className="group bg-olympus-black hover:bg-gray-900 p-6 text-center transition-colors duration-300">
+                  <p className="text-xs font-heading uppercase tracking-wider text-gray-400 group-hover:text-olympus-gold mb-1 transition-colors duration-300">Cell (Peter)</p>
+                  <p className="text-3xl md:text-4xl font-display text-white transition-colors duration-300">403-919-5272</p>
+                  <p className="text-xs text-olympus-gold mt-2 transition-colors duration-300">Fastest response</p>
+                </a>
+
+                {/* Office */}
+                <a href="tel:7802455809" className="group bg-olympus-black hover:bg-gray-900 p-6 text-center transition-colors duration-300">
+                  <p className="text-xs font-heading uppercase tracking-wider text-gray-400 group-hover:text-olympus-gold mb-1 transition-colors duration-300">Office</p>
+                  <p className="text-3xl md:text-4xl font-display text-white transition-colors duration-300">780-245-5809</p>
+                  <p className="text-xs text-olympus-gold mt-2 transition-colors duration-300">Business hours</p>
+                </a>
+              </div>
+
+              <p className="text-center text-gray-800 text-sm mt-6">Monday - Saturday • Emergency services available</p>
+            </div>
+          </div>
+
+          {/* Email Section - Secondary Contact */}
+          <div className="max-w-3xl mx-auto">
+            <a href="mailto:ollympus1@outlook.com" className="group block bg-gray-100 hover:bg-gray-200 p-6 text-center transition-colors duration-300">
+              <div className="flex items-center justify-center gap-3">
+                <svg className="w-5 h-5 text-gray-500 group-hover:text-olympus-gold transition-colors duration-300" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                 </svg>
+                <span className="font-heading uppercase text-sm tracking-wider text-gray-600 group-hover:text-olympus-black transition-colors duration-300">Or email us</span>
               </div>
-              <h3 className="font-heading uppercase text-sm tracking-wider text-olympus-gold group-hover:text-olympus-black mb-2 transition-colors duration-300">Email Us</h3>
-              <p className="text-xl font-body text-olympus-black mb-2 break-all">ollympus1@outlook.com</p>
-              <p className="text-sm font-body text-gray-600 group-hover:text-gray-800 transition-colors duration-300">We respond within 24 hours</p>
+              <p className="text-lg font-body text-gray-700 group-hover:text-olympus-black mt-2 transition-colors duration-300">ollympus1@outlook.com</p>
+              <p className="text-xs text-gray-500 mt-1">We respond within 24 hours</p>
             </a>
           </div>
 
@@ -104,7 +127,7 @@ export default function Contact() {
           <h2 className="text-4xl font-display text-olympus-black text-center mb-12">WHY CHOOSE OLYMPUS?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-display text-white mb-4">4+</div>
+              <div className="text-5xl font-display text-white mb-4">27+</div>
               <h3 className="font-heading uppercase text-sm tracking-wider text-gray-800 mb-2">Years Experience</h3>
               <p className="text-sm font-body text-gray-700">
                 Proven track record of quality craftsmanship in Edmonton

@@ -32,8 +32,8 @@
 
 .split-right {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: stretch;
   overflow: hidden;
 }
 
@@ -72,6 +72,22 @@
 
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Simple Fade-in Animation for Gallery */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
 }
 
 /* Stagger animations for lists - Desktop only for performance */
