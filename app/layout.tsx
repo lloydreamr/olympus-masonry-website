@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
-  metadataBase: new URL('https://olympus-masonry.ca'),
+  metadataBase: new URL('https://olympusmasonryab.ca'),
   openGraph: {
     title: "Olympus Masonry - Edmonton's Premier Masonry Contractors",
     description: "Expert craftsmanship in brick, stone & concrete. Year-round masonry services in Edmonton, AB. 27+ years experience. Licensed & insured.",
-    url: 'https://olympus-masonry.ca',
+    url: 'https://olympusmasonryab.ca',
     siteName: 'Olympus Masonry',
     locale: 'en_CA',
     type: 'website',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://olympus-masonry.ca',
+    canonical: 'https://olympusmasonryab.ca',
   },
 };
 
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://olympus-masonry.ca',
+  '@id': 'https://olympusmasonryab.ca',
   name: 'Olympus Masonry',
-  image: 'https://olympus-masonry.ca/images/hero/brick-bond/brick-01.webp',
+  image: 'https://olympusmasonryab.ca/images/hero/brick-bond/brick-01.webp',
   description: 'Expert craftsmanship in brick, stone & concrete. Year-round masonry services in Edmonton, AB. 27+ years experience. Licensed & insured.',
-  url: 'https://olympus-masonry.ca',
+  url: 'https://olympusmasonryab.ca',
   telephone: '+1-403-919-5272',
   email: 'ollympus1@outlook.com',
   address: {
