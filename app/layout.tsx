@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://olympusmasonryab.ca',
   },
+  verification: {
+    google: 'wEocL8rYF_k4nAkirU1xPHL5VYEUnH-imP3Y5dUQLTc',
+  },
 };
 
 // LocalBusiness structured data for SEO
